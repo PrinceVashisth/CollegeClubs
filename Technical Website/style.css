@@ -1,0 +1,24 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+h1{
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+    font-weight: 900;
+    padding: 2rem;
+}
+.about-page{
+    margin:0px;
+    background-color:black;
+    height: 100%;
+    padding: 2rem;
+}
+
+.about-p{
+    color: white;
+    line-height: 2;
+    text-align: justify;
+    width: 50%;
+    margin: auto 100px;
+}

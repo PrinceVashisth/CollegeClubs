@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAVISHKAR</title>
+    <link rel="icon" href="img/favicon (4).ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        *{margin: 0;padding: 0;}
+        .navbar{
+            display: flex;
+            align-items: center;
+            max-width: 100vw;
+            position: sticky;
+            top:0 ;
+            z-index: 5;
+        }
+        .Links{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .link__right{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .Link{
+        margin: 10px 4vw;
+        font-size: 1.2rem;
+    }
+    .Link a{
+        text-decoration: none;
+        color: #fff; 
+    }
+    
+    .Link a:hover{
+        color: rgb(215, 190, 75);
+        transition: all 1s ease;
+    } 
+    
+     @media screen and (max-width:1200px){
+        .Links{
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            top: -800px;
+            background-color: #25262df2;
+            transition: all 1s ease;
+        }
+        .Links.active{
+            flex-direction: column;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            top:  0;
+            background-color: #25262df2;
+            transition: all 1s ease;
+        }
+        .Link {
+            margin: 20px 30px;
+            font-size: 1.5rem;
+        }
+
+        .Link:hover{
+            border:3px solid white;
+            transition: all 1s ease-in-out ;
+        }
+        .toggle__icon {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 10px;
+            right: 39px;
+            position: fixed;
+            z-index: 10;
+        }
+        #bar{
+            height: 3px;
+            width: 25px;
+            background-color: #fff;
+            margin: 3px;
+            margin-left: auto;
+            transition: all 0.3s ease;
+
+        }
+    
+        .toggle__icon.is-active #bar:nth-child(2){
+            opacity: 0;
+        }
+        .toggle__icon.is-active #bar:nth-child(1){
+         transform: translateY(8px) rotate(45deg);
+        }
+        .toggle__icon.is-active #bar:nth-child(3){
+         transform: translateY(-10px) rotate(-45deg);
+        }
+    
+     }
+    
+    </style>
+</head>
+
+<body>
+    <div class="club-logo" id="home">
+        <img src="img/Ellipse 1.png" alt="club-logo" class="club-logo-img">
+    </div>
+
+    <hr style="border: 1px solid white; margin: 0; padding: 0;">
+    <div class="navbar">
+        <div class="toggle__icon">
+            <div id="bar"></div>
+            <div id="bar"></div>
+            <div id="bar"></div>
+        </div>
+        <div class="link__right">
+            <ul class="Links">
+                <li class="Link"><a href="#home">Home</a></li>
+                <li class="Link"><a href="#about-us">About Us</a></li>
+                <li class="Link"><a href="./journey.html">Journey</a></li>
+                <li class="Link"><a href="#events">Events</a></li>
+                <li class="Link"><a href="./gallery.html">Gallery</a></li>
+                <li class="Link"><a href="#members">Members</a></li>
+                <li class="Link"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+      <!---------------------------Home---------------------------------->  
+    <div class="home" id="home" data-aos="fade-out"
+    data-aos-duration="1000"
+    >
+        <div class="contact"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        >
+            <ul class="contact-list">
+                <li class="contact-icon">
+                    <a href="https://discord.com/" target="_blank"><img src="img/Vectord.png" alt="discord"></a>
+                </li>
+                <li class="contact-icon">
+                    <a href="https://web.telegram.org/z/" target="_blank"><img src="img/Vector.png" alt="telegram"></a>
+                </li>
+                <li class="contact-icon">
+                    <a href="https://github.com/" target="_blank"><img src="img/Vectorg.png" alt="github"></a>
+                </li>
+                <li class="contact-icon">
+                    <a href="https://www.instagram.com/aavishkaar.eca/?igshid=YmMyMTA2M2Y=" target="_blank"><img src="img/Vectori.png" alt="instagram"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="home-name">
+            <div>
+                <img src="img/GLITCH_20220525133711 (2).gif" alt="" style="width: 30vw;">
+            </div>
+            <div class="home-slgn">
+                <img src="img/Black_Minimalist_Initial_Font_BE_Logo1-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+        <div class="earth-gif">
+            <img src="img/17363906_MotionElements_hologram-world-map-dot_converted_498847-640x360-10s-q1.gif" alt="earth gif" class="earth-gif-img">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--------------About Us-------------------->
+    <div class= "about-page" id="about-us">
+        <h1 style="font-family: 'Montserrat', sans-serif; color:white;text-align:center;"><b>ABOUT US</b></h1><br>
+        <h2 style=" font-family:'Montserrat', sans-serif ;color:white;">MISSION</h2>
+        
+        <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quod, vero,
+         laborum fuga quidem corporis repellendus culpa vitae officia commodi vel incidunt reiciendis dolorum.
+          Animi excepturi assumenda commodi velit cupiditate.Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Explicabo libero recusandae obcaecati natus consectetur quam, voluptatem eius? Aperiam molestiae
+           voluptates, atque facere, consequuntur incidunt quaerat reiciendis ipsa exercitationem minus molestias.
+  
+        </p>
+        <br>
+  
+        <h2 style=" font-family:'Montserrat', sans-serif; color:white;">VISION</h2>
+        <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ipsum ab delectus accusantium id non nulla
+            esse aspernatur, reprehenderit, doloribus tenetur, distinctio aperiam. Illo suscipit itaque pariatur
+            esse inventore? Atque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus veritatis suscipit,
+            ducimus porro beatae quos, assumenda hic natus ad harum ipsum aliquid eaque accusantium quod recusandae sit cupiditate
+            minima. Eos enim pariatur incidunt. Dicta commodi quos eligendi minima nobis aliquam maiores veritatis quibusdam,
+            magni natus consectetur soluta quod eum aspernatur suscipit est, eius facilis nulla cum ex a voluptatum enim? Assumenda 
+            Lorem ipsum </p>
+            <div class="RunningGif">
+            </div>
+      </div> 
+      
+      <!--------------------What we do------------------->
+     <div id="WhatWeDo" data-aos="fade-in" data-aos-duration="1000">
+         <div class="WhatWeDoHeading">What We Do</div>
+         <div class="WhatWeDo__Cards">
+             <div class="WhatWeDoCard">
+                 <div class="Image"><img src="img/brain.png" alt="" srcset=""></div>
+                 <div class="WhatWeDoTitle">title</div>
+             </div>
+             <div class="WhatWeDoCard">
+                 <div class="Image"><img src="img/people_team.png" alt="" srcset=""></div>
+                 <div class="WhatWeDoTitle">title</div>
+             </div>
+             <div class="WhatWeDoCard">
+                 <div class="Image"><img src="img/market.png" alt="" srcset=""></div>
+                 <div class="WhatWeDoTitle">title</div>
+             </div>
+             <div class="WhatWeDoCard">
+                 <div class="Image"><img src="img/screen.png" alt="" srcset=""></div>
+                 <div class="WhatWeDoTitle">title</div>
+             </div>
+             <div class="WhatWeDoCard">
+                 <div class="Image"><img src="img/question_mark.png" alt="" srcset=""></div>
+                 <div class="WhatWeDoTitle">title</div>
+             </div>
+             <div class="WhatWeDoCard">
+                 <div class="Image"><img src="img/apple_icon.png" alt="" srcset=""></div>
+                 <div class="WhatWeDoTitle">title</div>
+             </div>
+         </div>
+     </div>
+ 
+        <!---------------------------------------Events-------------------------------------------->
+        <div class="Events" id="events" data-aos="fade-in" data-aos-duration="1000">
+          <h1 style="color: white; text-align: center; margin-bottom: 50px;">UPCOMING EVENTS</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" data-bs-interval="false">
+              <div class="carousel-item active">
+                <div class="card" style="width: 30rem; background-color: transparent; color: white;">
+                    <img class="card-img-top" src="img/tech-event-motion-poster-design-template-df7a48b3f947c2311df321e776cc3269 1.png" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h1 style="padding: 1rem;">Poster Heading</h1>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card1's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum voluptates quidem molestias quasi ipsa mollitia voluptas, rem libero delectus doloremque nobis quis perspiciatis vitae impedit aliquid cumque animi perferendis.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 30rem; background-color: transparent; color: white;">
+                    <img class="card-img-top" src="img/tech-event-motion-poster-design-template-df7a48b3f947c2311df321e776cc3269 1.png" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h1 style="padding: 1rem;">Poster Heading</h1>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card2's content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut impedit aliquam non reprehenderit perspiciatis ut temporibus obcaecati, reiciendis rem eveniet sint amet quisquam omnis voluptates soluta fuga sapiente porro repellat?</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 30rem; background-color: transparent; color: white;">
+                    <img class="card-img-top" src="img/tech-event-motion-poster-design-template-df7a48b3f947c2311df321e776cc3269 1.png" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <h1 style="padding: 1rem;">Poster Heading</h1>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card3's content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt ratione eaque repellendus. Non reprehenderit sint, suscipit eveniet beatae aut a laudantium deserunt saepe. Dicta ut ullam asperiores, deserunt fugiat facilis!</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+      </div>
+      <!------------Team Leads---------------------> 
+      <div class="AboutUs" id="members" data-aos="fade-in" data-aos-duration="1000">
+        <div class="Heading__AboutUs"><b>TEAM MEMBERS</b></div>
+        <div class="AboutUsCards">
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000" >
+             <img src="img/Rectangle 169.png" alt="">
+                <div class="ContactMember">
+                   <img src="../image.jpg" alt="">
+                   <img src="../image.jpg" alt="">
+                   <img src="../image.jpg" alt="">
+               </div>
+                <div class="NameOfMember">
+                   <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000">
+             <img src="img/Rectangle 169.png" alt="">
+                <div class="ContactMember">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                   <img src="" alt="">
+               </div>
+                <div class="NameOfMember">
+                   <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000">
+             <img src="img/Rectangle 179.png" alt="">
+                <div class="ContactMember">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                   <img src="" alt="">
+               </div>
+                <div class="NameOfMember">
+                   <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000">
+             <img src="img/Rectangle 169.png" alt="">
+                <div class="ContactMember">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                   <img src="" alt="">
+               </div>
+                <div class="NameOfMember">
+                   <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000">
+             <img src="img/Rectangle 169.png" alt="">
+                <div class="ContactMember">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                   <img src="" alt=""> 
+               </div>
+                <div class="NameOfMember">
+                    <span>Name</span> 
+               </div> 
+
+            </div>
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000">
+             <img src="img/Rectangle 179.png" alt="">
+                <div class="ContactMember">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                   <img src="" alt="">
+               </div>
+                <div class="NameOfMember">
+                   <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000">
+             <img src="img/Rectangle 169.png" alt="">
+                <div class="ContactMember">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                   <img src="" alt="">
+               </div>
+                <div class="NameOfMember">
+                   <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard" data-aos="fade-in" data-aos-duration="1000">
+             <img src="img/Rectangle 179.png" alt="">
+                <div class="ContactMember">
+                   <img src="" alt="">
+                   <img src="" alt="">
+                   <img src="" alt="">
+               </div>
+                <div class="NameOfMember">
+                   <span>Name</span>
+                </div>
+                    
+            </div>
+            
+            
+           
+            
+        </div>
+        <div class="navSection">
+        </div>
+    </div>
+    <!------------------------------Contact Us------------------------->
+    <div class="contact-us" id="contact-us">
+             <div class="contact-us-name">
+                <h4 >AAVISHKAR <br>The Technical Club<br>ENGINEERING COLLEGE, AJMER<br>AJMER, RAJASTHAN</h4>
+             </div>
+             <div class="contact-us-logo">
+                 <a href="tel:+918005516659"><img src="img/vectorc.png" alt="Call"></a>
+                 <a href="https://discord.com/"><img src="img/Vectord.png" alt="Discord"></a>
+                 <a href="https://www.instagram.com/aavishkaar.eca/?igshid=YmMyMTA2M2Y="><img src="img/Vectori.png" alt="Instagram"></a>
+             </div>
+             <div class="ContectText">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam repudiandae corrupti temporibus incidunt quia distinctio vitae cumque ut animi
+             </div>
+    </div>
+    <!------------------------Copyright------------------------------------------>
+    <div class="copyright" id="copyright" style="text-align: center;">
+        <p style="margin-bottom: 0;">Copyright © 2022 AAVISHKAAR,  ECA | DEVELOPED BY <a href="../Team Creators'  PDF/TEAM AAVISHKAAR PDF.pdf" target="_blank"><em>TEAM CREATORS</em></a></p>
+    </div>
+         <script>
+              let loadMoredata = document.querySelector('#loadmore');
+              let currentItem = 4;
+              loadMoredata.onclick =()=>{
+                 let boxes = [...document.querySelectorAll('.AboutUsCard')];
+                 for(var i=currentItem;i<currentItem+4;i++){
+                    boxes[i].style.display = 'flex'; 
+                 }  
+                 currentItem+=4;
+                 if (currentItem >= boxes.length){
+                  loadMoredata.style.display = 'none'; 
+                 }
+
+                 console.log(currentItem+"  "+  boxes.length);
+               }
+        </script>
+    <!--Bootstrap Java Script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        const links = document.querySelector('.Links');
+        const toggle = document.querySelector('.toggle__icon');
+       
+      const toggleing = ()=>{
+         links.classList.toggle('active');
+         toggle.classList.toggle('is-active');
+      }
+    toggle.addEventListener('click',toggleing);
+    </script>
+    
+     <script>
+         const navbar = document.querySelector('.navbar');
+         var value;
+         window.onscroll = function(e){
+             value = window.scrollY;
+             if(value >=133)
+              navbar.style.backgroundColor='#151027';
+             else
+                 navbar.style.backgroundColor='transparent';   
+         }
+     </script>
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</html>

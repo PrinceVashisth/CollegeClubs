@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AADHAR-Student Welfare Club</title>
+    <link rel="icon" href="img/favicon (1).ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+            *{margin: 0;padding: 0;}
+    .navbar{
+        display: flex;
+        align-items: center;
+        max-width: 100vw;
+        position: sticky;
+        top:0 ;
+        z-index: 5;
+        background-color: black;
+    }
+    .Links{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link__right{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+.Link{
+    margin: 10px 4vw;
+    font-size: 1.2rem;
+}
+.Link a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+.Link a:hover{
+    color: rgb(215, 190, 75);
+    transition: all 1s ease;
+} 
+
+ @media screen and (max-width:1200px){
+    .Links{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: -800px;
+        background-color: #25262df2;
+        transition: all 1s ease;
+    }
+    .Links.active{
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top:  0;
+        background-color: #25262df2;
+        transition: all 1s ease;
+    }
+    .Link {
+        margin: 20px 30px;
+        font-size: 1.5rem;
+    }
+
+    .Link:hover{
+        border:3px solid white;
+        transition: all 1s ease-in-out ;
+    }
+    .toggle__icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 39px;
+        position: fixed;
+        z-index: 10;
+    }
+    #bar{
+        height: 3px;
+        width: 25px;
+        background-color: rgb(11, 11, 11);
+        margin: 3px;
+        margin-left: auto;
+        transition: all 0.3s ease;
+
+    }
+
+    .toggle__icon.is-active #bar:nth-child(2){
+        opacity: 0;
+    }
+    .toggle__icon.is-active #bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+    }
+    .toggle__icon.is-active #bar:nth-child(3){
+     transform: translateY(-10px) rotate(-45deg);
+    }
+
+ }
+
+    </style>
+
+</head>
+<body>
+    <div class="logo-name">
+        <div class="club-logo">
+            <a href="#"><img src="img/Black And White Simple K For Business Or Identity Logo  (2).png" alt="club-logo" width="150"></a>
+        </div>
+        <div class="club-name">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-decoration: none; font-weight: bolder; margin-bottom: 0;">AADHAR</h1>
+            <h5 style="margin-top: 0;">Student Wellfare Club, <span><a href="https://www.ecajmer.ac.in/" style="text-decoration: none; color: black;">ECA</a></span></h5>
+        </div>
+        <div class="club-contact">
+            <a href="https://instagram.com/aabha.eca?igshid=YmMyMTA2M2Y=" target="_blank"><img class="contact-logo" id="insta" src="img/instagram.png" alt="instgram-logo"></a>
+            <a href="tel:+918005516659"><img class="contact-logo" id="linkedin" src="img/call.png" alt="linkedin-logo"></a>
+            <a href="mailto:durganshumishra2001@gmail.com" target="_blank"><img class="contact-logo" id="mailme" src="img/email.png" alt="mail-logo"></a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="toggle__icon">
+            <div id="bar"></div>
+            <div id="bar"></div>
+            <div id="bar"></div>
+        </div>
+        <div class="link__right">
+            <ul class="Links">
+                <li class="Link"><a href="./index.html">Home</a></li>
+                <li class="Link"><a href="./index.html">About Us</a></li>
+                <li class="Link"><a href="../Technical Website/journey.html">Journey</a></li>
+                <li class="Link"><a href="#EventsAndGallery">Events</a></li>
+                <li class="Link"><a href="../Technical Website/gallery.html">Gallery</a></li>
+                <li class="Link"><a href="#Members">Members</a></li>
+                <li class="Link"><a href="#ContactUS">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="about-us">
+        <div style="width: 50%; display: inline-block;" class="about-p">
+            <h2 style="padding: 2rem;">ABOUT AADHAR.</h2>
+            <p style="width: 80%; text-align: justify; line-height: 2; padding: 2rem;">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam veniam praesentium illum illo magni sed, neque repellat iure delectus, aliquid in. Voluptatibus veritatis neque reprehenderit nesciunt distinctio laborum sapiente aliquam eaque, sint doloremque natus ea sit vitae quas dolorum animi, dignissimos assumenda libero iusto iure omnis accusamus. Mollitia soluta inventore vero neque optio deleniti nam nesciunt aspernatur rem eligendi ab labore, asperiores adipisci nisi excepturi voluptate quia provident cupiditate hic deserunt officia quisquam. Sapiente corporis eveniet libero quaerat officiis saepe dolor ipsa esse! Quos qui similique, error aliquid repellat, sunt officia fugit voluptatum vero, officiis tempore asperiores praesentium saepe!
+            </p>
+        </div>
+
+
+        <div style="width: 50%; display: inline-block;" class="about-carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators ms-auto me-auto">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/depositphotos_52469233-stock-photo-group-of-business-people-with.jpg" class="d-block w-100" alt="first-slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/male-speaker-on-stage-answering-audience-questions-picture-id954610162.jpg" class="d-block w-100" alt="second-slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/team.jpg" class="d-block w-100" alt="third-slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------News------------------------------->
+
+    <div id="news">
+        <h1 style="padding: 2rem; text-align: center;">Latest News</h1>
+        <div class="News__MainEvents">
+            <div class="News__EventCards">
+            
+                <div class="News__EventCard">
+                   <a href="#"><img src="img/7e36c7c4ba189daf8903ef1fd9f628c1.png" alt="" srcset=""></a>
+                </div><!-- News__EventCard -->
+                 
+                <div class="News__EventCard">
+                   <a href="#"><img src="img/poster-8-5x11-external.png" alt="" srcset=""></a>
+                </div><!-- News__EventCard -->
+
+                <div class="News__EventCard">
+                    <a href="#"><img src="img/poster-designs-for-entrepreneur 1.png" alt="" srcset=""></a>
+                 </div><!-- News__EventCard -->
+            
+            </div><!-- News__EventCards -->   
+        </div>
+    </div>
+
+    <!-----------------------------------------------------Events--------------------------------------------->
+
+    <div class="Events__List" id="events">
+        <div class="EventHeading"><h1>EVENTS</h1></div>
+        <div class="EventsCards" >
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <a href="https://drive.google.com/file/d/1LNa9uKNI8HHG1iRdOVlzHN5PPzsyMVcV/view?usp=sharing"><img src="img/corporate-events.jpg" alt="" srcset=""></a>
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <a href="https://drive.google.com/file/d/1qmiT-SUe7iDB38BUe3aWkG_mqztkqfER/view?usp=sharing"><img src="img/corporate-events.jpg" alt="" srcset=""></a>
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <img src="img/corporate-events.jpg" alt="" srcset="">
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <img src="img/corporate-events.jpg" alt="" srcset="">
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <img src="img/corporate-events.jpg" alt="" srcset="">
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <img src="img/corporate-events.jpg" alt="" srcset="">
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <img src="img/corporate-events.jpg" alt="" srcset="">
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <img src="img/corporate-events.jpg" alt="" srcset="">
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+            <div class="EventsCard">
+                  <div class="EventImg">
+                   <img src="img/corporate-events.jpg" alt="" srcset="">
+                  </div>
+                  <div class="EventTitle"><span>Title</span></div>
+                  <div class="EventInfo">
+                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium,
+                      tempore ex aperiam maxime hic excepturi voluptates quae dignissimos! 
+                    </span>
+                  </div>    
+            </div><!-- EventsCard -->
+        </div><!-- EventsCards -->
+        <div id="load-more">Load More</div>
+        <div id="view-less">view less</div>
+    </div><!-- LatestEvents -->
+         <script>
+           var LoadMore = document.querySelector('#load-more');
+           var ViewLess = document.querySelector('#view-less');
+           var cards = 3;
+           LoadMore.onclick = ()=>{
+              var boxes = [...document.querySelectorAll('.EventsCard')];
+              for(var i=cards;i<cards+3;i++){
+                boxes[i].style.display = 'flex';
+              }
+              cards+=3;
+              if(cards>=boxes.length){
+                LoadMore.style.display = 'none';
+                ViewLess.style.display='flex';
+                cards = 3;
+              }
+            }
+
+            var Totalcards = 9;
+            ViewLess.onclick =()=>{
+              var boxes = [...document.querySelectorAll('.EventsCard')];
+              for(var i=Totalcards-1;i>=Totalcards-3;i--){
+                  boxes[i].style.display = 'none';
+              }
+              Totalcards-=3;
+              if(Totalcards<=3){
+                LoadMore.style.display = 'flex';
+                ViewLess.style.display='none';
+                 Totalcards = 9;
+              }
+              console.log(Totalcards);
+            }
+        </script>
+
+    <!---------------------------------------------------------Members------------------------------------------------>
+
+    <div class="AboutUs" id="members">
+        <div class="Heading__AboutUs">Our Team Member</div>
+        <div class="AboutUsCards">
+            <div class="AboutUsCard">
+            <img src="img/man.png" alt="">
+                <div class="ContactMember">
+                <img src="../image.jpg" alt="">
+                <img src="../image.jpg" alt="">
+                <img src="../image.jpg" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/woman.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/man.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/woman.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/man.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt=""> 
+            </div>
+                <div class="NameOfMember">
+                    <span>Name</span> 
+            </div> 
+
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/woman.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/man.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/woman.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+                <img src="img/man.png"  lt="">
+                <div class="ContactMember">
+
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt=""> 
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/woman.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/man.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>
+                    
+            </div>
+            <div class="AboutUsCard">
+            <img src="img/woman.png" alt="">
+                <div class="ContactMember">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+                <div class="NameOfMember">
+                <span>Name</span>
+                </div>     
+            </div>
+        </div>
+        <div class="navSection">
+        </div>
+    </div>
+
+    <div class="contact-us" id="contact-us">
+        <h3 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Contact us</h3>
+        <br>
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <h4>Address</h4>
+                    <p>
+                        Engineering College, Badaliya, Ajmer- 305024
+                    </p>
+                </td>
+
+                <td>
+                    <a href="https://instagram.com/aabha.eca?igshid=YmMyMTA2M2Y=" target="_blank"><img class="contactus-logo" src="img/instagram1.png" alt="instgram-logo"></a>
+                    <a href="tel:+918005516659"><img class="contactus-logo" src="img/phone-call.png" alt="call-logo"></a>
+                    <a href="mailto:durganshumishra2001@gmail.com" target="_blank"><img class="contactus-logo" src="img/email (1).png" alt="mail-logo"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="copyright" id="copyright" style="text-align: center;">
+        <p>Copyright © 2022 AAVISHKAAR,  ECA | DEVELOPED BY <a href="../Team Creators'  PDF/TEAM AADHAR PDF.pdf"><em>TEAM CREATORS</em></a></p>  
+    </div>
+
+    <!--Bootstrap javascript---------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        const links = document.querySelector('.Links');
+        const toggle = document.querySelector('.toggle__icon');
+       
+      const toggleing = ()=>{
+         links.classList.toggle('active');
+         toggle.classList.toggle('is-active');
+      }
+    toggle.addEventListener('click',toggleing);
+    </script>
+
+</body>
+</html>

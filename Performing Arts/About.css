@@ -1,0 +1,517 @@
+*{margin: 0;padding: 0;box-sizing: border-box; scroll-behavior: smooth;}
+
+body{
+    max-width: 100vw;
+}
+
+.AboutUs__navbar {
+    display: flex;
+    background-color: #777373;
+    height: 100px;
+    align-items: center;
+    position: sticky;
+    background-image: url(./img/prism.png);
+    top: 0;
+    z-index: 2;
+}
+.NavLinks{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.Aaroh__club{
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Links{
+    display: flex;
+    list-style-type: none;
+}
+
+.Link{
+    margin: 0 30px;
+    font-size: 1.2rem;
+}
+.Link a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+.Link a:hover{
+    color: rgb(215, 190, 75);
+    transition: all 1s ease;
+}
+
+@media screen and (max-width:1000px){
+    .NavLinks{
+        justify-content: space-between;
+    }
+    .Links{
+        flex-direction: column;
+        width: 100vw;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: -800px;
+        background-color: #25262df2;
+        transition: all 1s ease;
+    }
+    .Links.active{
+        flex-direction: column;
+        width: 100vw;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: 100px;
+        background-color: #25262df2;
+        transition: all 1s ease;
+    }
+    .Link {
+        margin: 10px 30px;
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+    .toggle__icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 29px;
+        right: 39px;
+    }
+    #bar{
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        margin: 3px;
+        margin-left: auto;
+        transition: all 0.3s ease;
+    }
+
+    .toggle__icon.is-active #bar:nth-child(2){
+        opacity: 0;
+    }
+    .toggle__icon.is-active #bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+    }
+    .toggle__icon.is-active #bar:nth-child(3){
+     transform: translateY(-10px) rotate(-45deg);
+    }
+
+}
+
+
+.AboutUS__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#e5e5e5;
+}
+
+.left__side_container{
+    width: 1300vw;
+    height: calc( 100vh - 80px);
+    background-image: linear-gradient(61deg,transparent 72%,#000 72.4%,#e5e5e5 10%),url("./img/IMG_20220407_132246.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.left__side_container img,.News_photo img,.EventsImg img,.image__ContactUs img{
+    opacity: 0;
+    max-width: 0vw;
+    height:0px;
+    opacity: 0;
+
+}
+
+.right_side_container{
+    margin-right:100px;
+}
+
+
+
+/* news */
+
+#News{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e5e5e5;
+}
+
+.News_Text{
+    position: absolute;
+   margin-left: 30px; 
+   width: 400px; 
+}
+#News h2{
+    margin-bottom: 10px;
+}
+
+.News_photo{
+    height: 100vh;
+    width:200vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image:linear-gradient(303deg,transparent 60%,#000 60.4%,#e5e5e5 35% ) ,url('./img/IMG_20220407_153511.jpg');   
+    
+}
+.right_side_container h2{
+     margin-bottom: 30px;
+}
+
+
+#EventsAndGallery{
+/* Events */
+position: relative;
+display: flex;
+background-color: #e5e5e5;
+}
+
+.EventsImg{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(76deg,transparent 71%,#000 71.4%,#e5e5e5 30%) ,url('./img/IMG_20220407_144246.jpg');
+    background-size: 81vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.Events__togo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    top: 100px;
+}
+
+.heading_Events{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.Links__event{
+    display: flex;
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.link_events a{
+    font-size: 1.3rem;
+    margin: 0px 10px;
+    text-decoration: none;
+    background-color: #C4C4C4;
+    padding: 5px 10px;
+}
+
+/* Members */
+
+
+#Members{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e5e5;
+    background-image: linear-gradient(323deg,transparent 59%,#000 59.3%,#fff 47%),url("./img/prism.png");
+    background-size: 100vw 100vh;
+    max-width: 100vw;
+    background-repeat: no-repeat;
+}
+
+.Heading__Members{
+    margin-top:20px;
+    font-size: 2.5rem;
+}
+.MembersCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.MembersCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+   background: #000;
+   margin: 50px 15px;
+   position: relative;
+}
+
+
+.MembersCard img{
+    width: 20vw;
+    height: 200px;
+}
+.ContactMember{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+.ContactMember img{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    margin: 0 10px; 
+}
+
+.NameOfMember{
+    color: aliceblue;
+    text-align: center;
+    padding:15px 5px;
+}
+
+.MembersCard:hover .ContactMember{
+    top:calc(200px - 40px);
+   transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@media screen and (max-width:1000px){
+    .MembersCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .MembersCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+        background: #000;
+        margin: 50px 1vw;
+        position: relative;
+    }
+    
+    
+    .MembersCard img{
+        width: 30vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+        width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+   
+    .MembersCard:hover .ContactMember{
+        top:calc(200px - 200px);
+       transition: all 0.5s ease-in-out;
+        opacity: 1;
+    }
+    .Members{
+        background-image:url('');
+    }
+}
+@media screen and (max-width:600px){
+    .MembersCards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .MembersCard{
+        width: 45vw;
+    }
+    
+    
+    .MembersCard img{
+        width: 45vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+@media screen and (max-width:450px){
+    .MembersCards{
+        grid-template-columns: 1fr;
+    }
+    
+    .MembersCard{
+        width: 80vw;
+    }
+    
+    
+    .MembersCard img{
+        width: 80vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+
+/* Contact Us */
+
+#ContactUS{
+    display: flex;justify-content: space-between;
+    position: relative;
+    background-color: 
+    #e5e5e5;
+}
+
+.image__ContactUs{
+    height: 100vh;
+    width:70vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image:linear-gradient(72deg,transparent 70%,#000 70.4%,#e5e5e5 30% ) ,url('./img/IMG_20220407_110235.jpg');   
+    
+}
+.right__contactUs{
+    position: absolute;
+    width: 30vw;
+    right: 0;
+    margin-right: 100px;
+    top: 20px;
+}
+
+.ContactUSHeading,.ContactUSHeading h2{
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:1290px){
+    .left__side_container{
+        width: 800vw;
+        background-image: linear-gradient(69deg,transparent 72%,#e5e5e5 10%),url("./img/IMG_20220407_132246.jpg");
+    }
+    .right_side_container{
+        margin-right: 20px;
+    }
+    .News_photo{
+        background-image:linear-gradient(290deg,transparent 55%,#e5e5e5 35% ) ,url('./img/IMG_20220407_153511.jpg');   
+    }
+
+}
+
+@media screen and (max-width:1160px){
+        .left__side_container, .News_photo,.EventsImg,.image__ContactUs{
+            width: 100vw;
+            background-image: url('');
+            height: 65vh;
+        }
+        .left__side_container img,.News_photo img,.EventsImg img,.image__ContactUs img{
+            min-width: calc(100vw - 10px);
+            height: 60vh;
+            opacity: 1;
+        }
+        .News_Text,.right__contactUs,.ContactMember,.Events__togo,.News_Text{
+            position: relative;
+        }
+
+        .ContactUSHeading{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .right__contactUs{
+            position: relative;
+            width: 100vw;
+            right: 0px;
+            margin-right:0px;
+            top: 0px;
+        }
+        .Events__togo{
+            width: 100vw;
+            padding: 0 30px;
+            margin-bottom: 20px;
+            top: 0;
+            right: 0;
+        }   
+            #EventsAndGallery,#ContactUS{
+            flex-direction: column;
+        } 
+        #News{
+            flex-direction: column-reverse;
+        } 
+
+        .AboutUS__container{
+           flex-direction: column;
+        }
+        .right_side_container{
+             padding: 0 100px;
+             text-align: center;
+             margin-bottom: 40px;
+             font-size: 1.3rem;
+        }
+        .link_events a{
+            font-size: 1rem;
+            margin: 0px 5px;
+            text-decoration: none;
+            background-color: #C4C4C4;
+            padding: 5px;
+        }
+    }
+
+    @media screen and (max-width:600px){
+     
+        .right_side_container{
+            margin-right:0px;
+            padding: 0px 3px
+        }
+        .News_Text{
+           margin-left: 0px; 
+           width: 100vw; 
+        }
+    }
+
+    .copyright{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        align-items: center;
+        padding: 0.5rem;
+        color: white;
+        font-weight: bold;
+        background-color: black;
+    }

@@ -1,0 +1,581 @@
+/*---------------------------------------tag selectors*/
+*{
+    max-width: 100vw;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vw;
+}
+
+.flickity{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel{
+   width: 100vw;
+    background: rgba(97, 221, 205, 0.301);
+} 
+/* Carosol ends */
+
+.carousel-cell a img{
+    width: 95vw;
+    height: 500px;
+}
+
+.Photography__Navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.Photography__links a{
+    text-decoration: none;
+}
+.carousel-item img{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+    font-weight: 900;
+}
+
+/*---------------------------------------class selectors-------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.logo-name{
+    align-items: center;
+    display: flex;
+    max-width: 100vw;
+    background-image: url(img/Untitled\ design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat    ;
+}
+
+.club-logo{
+    padding: 1rem;
+}
+
+.club-name{
+    padding-left: 3rem;
+}
+
+.club-contact{
+    padding-right: 2rem;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .contact-logo{
+        width: 30px;
+    }
+    .club-contact{
+        padding-right: 0;
+    }
+}
+
+.nav-link{
+    margin: auto 3rem;
+}
+
+.home{
+    height: 60bh;
+    width: 100bw;
+}
+
+.contact-logo{
+    position: relative;
+    /* display: flex; */
+    width: 50px;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.nav-item{
+    font-family: 'Merriweather', serif; 
+}
+
+.about-page{
+    width: 100%;
+    margin:0px;
+    background-image: url(img/MacBook\ Pro\ 16_\ -\ 26.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 2rem;
+}
+
+.about-p{
+    color: white;
+    line-height: 2;
+    text-align: justify;
+    width: 60%;
+    margin: auto 100px;
+}
+
+.about-pic{
+    margin: 40px 50px;
+    height:450px;
+    width:300px;
+    float:right;
+}
+
+.about-pic:hover{
+    transition: all 1s ease;
+    transform: scale(1.15);
+}
+
+/* * { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.Flickty{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.carousel {
+    width: 50vw;
+  background: #EEE;
+}
+
+
+.carousel-cell {
+  width: 80vw;
+  height: auto;
+  border-radius: 5px;
+}
+
+.carousel-cell a img{
+    width: 25vw;
+    padding: 0 20px;
+} */
+
+.newsheading{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom:60px;
+}
+.newsheading span{
+    font-size: 2.5rem;
+    padding:6px 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+ 
+ .News__Section{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 50px;
+ }
+ 
+ .News__Lines{
+    display: flex;
+    flex-direction: column;
+ 
+ }
+ .NewsHeadings{
+     list-style-type: none;  
+ }
+ .news{
+     margin: 10px 0;
+ }
+ 
+ .News__EventCards{
+     display: flex;
+     justify-content: space-around;
+     width: 50vw;
+     margin: 50px auto;
+ }
+ 
+ .News__EventCard img{
+     width: 300px;
+     height: 400px;
+ }
+ .News__EventCard:hover{
+     transition: all 1s ease;
+     transform: scale(1.15);
+ }
+ 
+ @media screen and (max-width:1300px){
+     .News__Section{
+         padding: 0 20px;
+     }
+     .News__EventCard,.News__EventCard img{
+         width: 250px;
+         height: 350px;
+     }
+ }
+ 
+ @media screen and (max-width:1100px){
+    
+   .News__Section{
+       flex-direction: column;
+   }
+  .News__MainEvents{
+       margin-top: 50px;
+   }
+    .News__EventCards{
+     justify-content: space-around;
+     width: 100vw;
+ 
+    } 
+ }
+
+ @media screen and (max-width: 830px) {
+     .News__EventCards{
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .News__EventCard{
+         margin: 30px auto;
+     }
+ }  
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.Events__List{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: space-around;
+    background: #000;
+}
+
+.EventHeading{
+    color: aliceblue;
+    font-size: 2rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.EventsCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center; 
+}
+
+.EventsCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    margin: 20px 10px;
+    background: #211F24;
+    position: relative;
+    display: none;
+}
+
+.EventImg, .EventImg a img{
+    height: 250px;
+}
+
+.EventsCard:nth-child(1),
+.EventsCard:nth-child(2),
+.EventsCard:nth-child(3){
+    display: flex;
+}
+
+.EventImg img{
+    width: 25vw;
+    margin-bottom: 5px;
+}
+.EventTitle{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+.EventInfo{
+position: absolute;
+top: 0;
+opacity: 0; 
+color: #fff;
+}
+
+.EventsCard:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.EventsCard:hover .EventTitle{
+    position:absolute;
+    opacity: 0;
+    margin: 0;
+}
+
+.EventsCard:hover .EventInfo{
+    position: relative;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    text-align: center;
+}
+
+#load-more,#view-less{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #211F24;
+    height: 30px;
+    color: #fff;
+    margin: 10px auto;
+    padding: 0px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#view-less{
+    display: none;
+}
+
+
+@media screen and (max-width:1100px){
+    .EventsCards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .EventsCard{
+        width: 40vw;
+    }
+    .EventImg img{
+        width: 40vw;
+    }
+
+}
+
+@media screen and (max-width:550px){
+    .EventHeading{
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    .EventsCards{
+        grid-template-columns: 1fr;
+    }
+    .EventsCard{
+        width: 85vw;
+    }
+    .EventImg img{
+        width: 85vw;
+    }
+    .EventsCard:hover{
+        transform: scale(1.05);
+    }
+  
+
+}
+
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUs .Heading__AboutUs{
+    font-size: 2.5rem;
+}
+.AboutUsCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.AboutUsCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 20vw;
+   background: #000;
+   margin: 50px 2vw;
+   position: relative;
+}
+
+
+.AboutUsCard img{
+    width: 20vw;
+    height: 200px;
+}
+.ContactMember{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+.ContactMember img{
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+   margin: 0 10px; 
+}
+
+.NameOfMember{
+    color: aliceblue;
+    text-align: center;
+    padding:15px 5px;
+}
+
+.AboutUsCard:hover .ContactMember{
+    top:calc(200px - 40px);
+   transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@media screen and (max-width:1000px){
+    .AboutUsCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .AboutUsCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       width: 30vw;
+       background: #000;
+       margin: 50px 1vw;
+       position: relative;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 30vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+@media screen and (max-width:600px){
+    .AboutUsCards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .AboutUsCard{
+       width: 45vw;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 45vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+@media screen and (max-width:450px){
+    .AboutUsCards{
+        grid-template-columns: 1fr;
+    }
+    
+    .AboutUsCard{
+       width: 80vw;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 80vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+
+.contact-us{
+    align-items: center;
+    background-color: #000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 30vh;
+}
+
+.contactus-logo{
+    margin: auto 10px;
+}
+
+.contactus-logo:hover{
+    transition: all 1s ease;
+    transform: scale(1.15);
+}
+
+.copyright{
+    font-weight: bold;
+}
+
+
+/*----------------------------------------id selectors*/
+
+#news{
+    height: 70vh;
+}
+
+#insta:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+#linkedin:hover{
+    background-color: #6BCB77;
+}
+
+#mailme:hover{
+    background-color: #F90716;
+}

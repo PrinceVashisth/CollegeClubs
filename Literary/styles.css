@@ -1,0 +1,1457 @@
+/* theatre--370 */
+/* bookshelf--587 */
+/* blogs--636 */
+/* members---720 */
+/* .fkickity--934 */
+/* media for event and gallery --982*/
+/* media for poems--1083*/
+/* media for blogs--1158*/
+/* media for talks--1214 */
+/* members and media for members--1332 */
+/* contact-us--1370*/
+/* keyframes--1386 */
+/* poems--207 */
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+/* //-------------------------------------class selectors */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.nav-link{
+    margin: auto 3rem;
+}
+.contact-logo:hover{
+    transition: all 1s ease;
+    transform: scale(1.15);
+}
+
+.home{
+    height: 60bh;
+    width: 100bw;
+}
+
+.contact-logo{
+    position: relative;
+    top: 50px;
+    width: 10%;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.nav-item{
+    font-family: 'Merriweather', serif; 
+}
+.about-p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+    width: 50%;
+    margin: -15px 100px;
+}
+
+.about-pic{
+    margin: 0;
+    height:400px;
+    width:300px;
+    padding: 0;
+    position: absolute;
+    right: 200px;
+
+}
+
+.row {
+    display: flex;
+  }
+  
+ .column {
+    flex: 40%;
+    margin-left: 50px;
+  }
+.about h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 700;
+   
+}
+
+#aboutpageheading{
+    background-color: #000;
+    color: white;
+    display: inline-block;
+    font-family: 'Merriweather', serif;
+    text-align:center;
+     margin:4% 40%; 
+    padding: 0.8rem;
+   
+   
+}
+.column img{
+    
+    height: 550px;
+    width: 475px;
+    margin-left: 125px;
+    /* border: 5px solid brown; */
+    
+    
+
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.row p{
+    
+     font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+ transform: translateY(-20px);
+    color: #000000;
+     
+}
+.row h2{
+    font-size: 2.5rem;
+}
+
+th{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+th:hover{
+    transform: scale(1.1);
+    box-shadow: 6px 6px 25px 5px rgba(46, 158, 176, 0.92) ; 
+}
+     
+  table {
+    border-spacing: 15px;
+  }
+  .slide-container{
+      position: relative;
+      margin-top: 65px;
+      width: 40%;
+      height: 50%;
+  }
+ 
+  .slide img{
+    height: 530px;
+    width: 430px;
+    box-shadow: 0 15px 20px -6px black;
+    transform: translateY(100px);
+}
+
+  .triangle-left{
+    cursor: pointer;
+    position: absolute;
+    /* top: 45%; */
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 40px solid black;
+	border-bottom: 25px solid transparent;
+    left: 250px;
+    top: 330%;
+}
+.triangle-right {
+    cursor: pointer;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 23px solid transparent;
+	border-left: 35px solid black;
+	border-bottom: 23px solid transparent;
+   left:550px ;
+    top: 330%;
+    
+}
+
+.triangle-left2{
+    cursor: pointer;
+    position: absolute;
+    /* top: 45%; */
+	width: 0;
+	height: 0;
+	border-top: 23px solid transparent;
+	border-right: 35px solid black;
+	border-bottom: 23px solid transparent;
+    right: 550px;
+    top: 74%;
+}
+.triangle-right2{
+    cursor: pointer;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 40px solid black;
+	border-bottom: 25px solid transparent;
+    right:250px ;
+    top: 74%;
+}
+
+/* poems */
+
+@media screen and (max-width:1000px){
+
+    .poems{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    
+    .poems .Heading__AboutUs{
+        font-size: 2.5rem;
+    }
+
+    .AboutUsCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;  
+    }
+    
+    .AboutUsCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       width: 30vw;
+       background: #000;
+       margin: 50px 1vw;
+       position: relative;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 30vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: rgba(46, 158, 176, 0.92);
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+ 
+}
+@media screen and (max-width:600px){
+    .AboutUsCards{
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+    .AboutUsCard{
+       width: 45vw;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 45vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+@media screen and (max-width:450px){
+    .AboutUsCards{
+        grid-template-columns: 1fr;
+    }
+    
+    .AboutUsCard{
+       width: 80vw;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 80vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+
+/* Theatre */
+@media screen and (max-width:1000px){
+.theatre{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+ .theatre span{
+    font-size: 2.5rem;
+     background-color: black; color:white; padding: 0.8rem;  
+}
+.theatreCards{
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    
+    transform: translateY(-50px);
+    padding: 50px;
+    
+}
+
+.theatreCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 18vw;
+   border-radius: 10px;
+  height: 350px;
+   margin: 50px 2vw;
+   position: relative;
+}
+ .theatreCard video{
+      height: 350px; width: 18vw;
+ } 
+.ContactMember{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+.NameOfMember{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:5px 3px;
+}
+
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: rgba(46, 158, 176, 0.92);
+        position: absolute; 
+        opacity: 0;
+    }
+        
+   
+    .triangle-left2{
+        cursor: pointer;
+        position: absolute;
+        /* top: 45%; */
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 30px solid black;
+        border-bottom: 20px solid transparent;
+        right: 260px;
+        top: 64%;
+    }
+    .triangle-right2{
+        cursor: pointer;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 30px solid black;
+        border-bottom: 20px solid transparent;
+        right:60px ;
+        top: 64%;
+    }
+    #theatreline{
+        transform: translate(-130px,-145px);
+        width: 50%;
+    }
+    #theatrecircle1{
+        transform: translate(1010px,-125px);
+    }
+    #theatrecircle2{
+        transform: translate(1085px,-148px);
+    }
+    #theatrecircle3{
+      transform: translate(1160px,-172px);
+    }
+}
+
+@media screen and (max-width:800px){
+   
+    .theatre h2{
+        font-size: 2rem; background-color: black; color:white; display: inline-block; padding: 0.8rem; width: 23%; margin: 0px auto;
+        transform: translateY(-30PX);
+     }
+     .theatreCards{
+        margin-top: -20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        justify-items: center;
+        padding: 50px;
+       transform: translateY(-50px);
+        
+    }
+    
+    .theatreCard{
+       width: 27vw;
+       height: 300px;
+       background-color: white;
+    }
+    
+    
+    .theatreCard video{
+        width: 27vw;
+        height: 300px;
+    } 
+    .theatre video:hover{
+   
+        transform: scale(1.1);
+           }
+ 
+    
+   
+    .triangle-left2{
+        cursor: pointer;
+        position: absolute;
+        /* top: 45%; */
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 30px solid black;
+        border-bottom: 20px solid transparent;
+        right: 260px;
+        top: 64%;
+    }
+    .triangle-right2{
+        cursor: pointer;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 30px solid black;
+        border-bottom: 20px solid transparent;
+        right:60px ;
+        top: 64%;
+    }
+    #theatreline{
+        transform: translate(-130px,-145px);
+        width: 50%;
+    }
+  
+    #theatrecircle1{
+        transform: translate(635px,-177px);
+    }
+    #theatrecircle2{
+        transform: translate(580px,-200px);
+    }
+    #theatrecircle3{
+      transform: translate(525px,-225px);
+    }
+    
+}
+@media screen and (max-width:450px){
+    .theatreCards{
+        grid-template-columns: 1fr;
+    }
+    
+    .theatreCard{
+       width: 80vw;
+    }
+    
+    
+    .theatreCard img{
+        width: 80vw;
+        height: 200px;
+    } 
+    .theatrember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+.contact-us{
+    background-color: #000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 3rem;
+    position: relative;
+}
+
+.BookShelfImg img{
+    height: 580px;
+     position: absolute;
+     top:-370px;
+     right: -60px;
+}
+
+
+.line-container {
+    display: flex;
+    width: 40%;
+    margin: 20px auto;
+    align-items: center;
+    
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background: rgba(46, 158, 176, 0.92) ;
+    position: relative;
+  }
+  .line.arrow-right:after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid  rgba(46, 158, 176, 0.92);
+  }
+  
+  .line.arrow-left:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid  rgba(46, 158, 176, 0.92);
+  }
+
+  /* blogs */
+
+  .blogs{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+  .blogsCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.blogsCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 15vw;
+   background:  rgba(46, 158, 176, 0.92);
+   margin: 50px 2vw;
+   position: relative;
+   text-align: left;
+  
+}
+
+
+.blogsCard img{
+    width: 15vw;
+    height: 150px;
+ 
+}
+.NameOfMember2 {
+    font-family: 'Inter';
+    color: aliceblue;
+    padding:10px 5px;
+}
+.card-text p{
+    font-family: 'Inter';
+    color: white;
+font-size: .8rem;
+
+margin-bottom: 10PX;
+
+}
+.talks{
+    margin-top: -50px;
+    height: 70%;
+}
+.blogs{
+    /* margin-top: 30px; */
+    height: 70%;
+}
+.theatre img{
+    height: 300px;
+    border-radius: 10px;
+}
+ h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.theatre{
+    height: 100%;
+}
+.theatre h2{
+    margin-top: 60px;
+}
+
+.slide-txt{
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.slide-txt p{
+    margin-top: 20px;
+    animation: an 1s ease-out 1 both;
+}
+
+/* members */
+
+.members{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    height: 100%;
+    width: 100%;
+}
+
+.members .Heading__members{
+    font-size: 2.5rem;
+    margin-top: 120px;
+}
+.membersCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.membersCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 20vw;
+   background: #000;
+   margin: 50px 2vw;
+   position: relative;
+}
+
+
+.membersCard img{
+    width: 20vw;
+    height: 200px;
+}
+.Contact_Member{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+.Contact_Member img{
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+   margin: 0 10px; 
+}
+
+.NameOfMember{
+    color: aliceblue;
+    text-align: center;
+    padding:15px 5px;
+}
+
+.membersCard:hover .ContactMember{
+    top:calc(200px - 40px);
+   transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@media screen and (max-width:1000px){
+    .membersCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .membersCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       width: 30vw;
+       background: #000;
+       margin: 50px 1vw;
+       position: relative;
+    }
+    
+    
+    .membersCard img{
+        width: 30vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+@media screen and (max-width:600px){
+    .membersCards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .membersCard{
+       width: 45vw;
+    }
+    
+    
+    .membersCard img{
+        width: 45vw;
+        height: 200px;
+    } 
+    .Contac_tMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .Contact_Member img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+@media screen and (max-width:450px){
+    .membersCards{
+        grid-template-columns: 1fr;
+    }
+    
+    .membersCard{
+       width: 80vw;
+    }
+    
+    
+    .membersCard img{
+        width: 80vw;
+        height: 200px;
+    } 
+    .Contact_Member{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .Contact_Member img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+
+.contact-us{
+    width: 100%;   
+    height: 30vh;  
+    background-color: rgba(46, 158, 176, 0.92) ;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.blogs{
+    width: 100%;
+    height: 100vh;
+}
+/* hover for poems */
+.poems .AboutUsCard:hover{ 
+    box-shadow: 6px 6px 25px 5px rgba(46, 158, 176, 0.92) ;
+    transform: scale(1.1);
+       }
+.talks .AboutUsCard:hover{ 
+ box-shadow: 6px 6px 25px 5px rgba(46, 158, 176, 0.92) ;
+ 
+    }
+  
+    .theatre video:hover{
+   
+        transform: scale(1.1);
+           }
+
+           .circle {
+            height: 25px;
+            width: 25px;
+            border:3px solid black;
+            border-radius: 50%;
+          }
+          
+          .circle2 {
+            height: 25px;
+            width: 25px;
+            border:3px solid black;
+            border-radius: 50%;
+          }
+
+           /* #explore{
+            font-size: 3rem;  background-color: black; color:white; display: inline-block; padding: 0.8rem; width: 15%; margin: 10px auto; margin-top: -30px;  
+          }*/
+#poemline{
+   transform: translate(160px,-25px);
+}
+#poemcircle1{
+    transform: translate(490px,-52px); 
+}
+#poemcircle2{
+    transform: translate(405px,-78px);
+}
+#poemcircle3{
+    transform: translate(320px,-104px);
+}
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* .carousel {
+  background: #EEE;
+} */
+
+.carousel-cell {
+  width: 18%;
+  height: 300px;
+  margin-right: 25px;
+ background-color: rgba(46, 158, 176, 0.92) ;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+.carousel-cell img{
+    width: 100%; height:300px
+}
+.clubMembers{
+    width: 80%;
+    transform: translateX(150px);
+}
+.clubMembers h3,h4{
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+.carousel{
+    transform: translateX(150px);
+}
+#memberheading{
+    transform: translate(150px,-50px);
+}
+
+
+  /* media for events and gallery  */
+ 
+  #eventheading{
+    margin-top: 50px; margin-bottom: 20px;background-color: black;color: white; display: inline-block; margin-left: 100px;padding: 0.8rem; 
+  }
+  @media screen and (max-width:800px) {
+    #eventheading{
+        margin-top: 50px; margin-bottom: 20px;background-color: black;color: white; display: inline-block; margin-left: 100px;padding: 0.8rem; 
+      }
+      .about{
+          height: 100vh;
+          width: 100%;
+
+      }
+      .slide img{
+          height: 350px;
+          width: 300px;
+        margin-left: -5%;
+        transform: translateY(-475px);
+         
+      }
+      .row{
+          flex-direction: column-reverse;
+      }
+
+      .slide-txt p{
+          font-size: 1.2rem;
+          width: 50%;
+         transform: translate(340px,-40px);
+         animation: an 1s ease-out 1  ;
+       
+      }
+      .row column{
+          width: 50%;
+      }
+      .column h2{
+          transform: translateX(50px);
+          font-size: 2rem;
+      }
+      .column th{
+          transform: translate(40px,-20px);
+          font-size: 1rem;
+
+      }
+  .about .line-container{
+      margin-top: -430px;
+      width: 80%;
+  }
+  }
+
+  @media screen and (max-width:450px){
+    #eventheading{
+     
+         background-color: black;
+        color: white;
+         display: inline-block;
+         padding: 0.5rem;  
+         margin: 0 auto; 
+       
+      }
+    .about{
+        height: 100vh;
+        width: 100%;
+
+    }
+    
+    .slide img{
+        height: 350px;
+        width: 300px;
+      margin-left: -5%;
+      transform: translateY(-475px);
+       
+    }
+    .row{
+        flex-direction: column-reverse;
+    }
+    .slide-txt p{
+        font-size: 1.2rem;
+        width: 100%;
+       transform: translate(340px,-40px);
+    }
+    .row column{
+        width: 100%;
+    }
+    .column h2{
+        transform: translateX(50px);
+        font-size: 2rem;
+    }
+    .column th{
+        transform: translate(40px,-20px);
+        font-size: 1.2rem;
+
+    }
+.about .line-container{
+    margin-top: -430px;
+    width: 80%;
+}
+
+  }
+
+  /* media for poems */
+ #poemHeading{
+    font-size: 2.5rem; background-color:black ;color:white; display: inline-block;  width: 10%; margin: 10px auto; 
+    /* transform: translateY(-10px); */
+    padding: 0.8rem;
+ }
+  @media  screen and (max-width:800px) {
+      #explore{
+        font-size: 2.5rem;  background-color: black; color:white; display: inline-block; padding: 0.8rem; width: 30%; margin: 10px auto;   
+        transform: translateY(-5px);
+      }
+      #poemHeading{
+         font-size: 2rem; background-color:black ;color:white; display: inline-block;  width: 15%; margin: 10px auto; 
+         /* transform: translateY(-10px); */
+         padding: 0.7rem;
+      }
+      .AboutUsCards{
+        margin-top: -20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        justify-items: center;
+      }
+      .AboutUsCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       width: 28vw;
+       border-radius: 10px;
+       background:  rgba(46, 158, 176, 0.92);
+       margin: 50px 1vw;
+       position: relative;
+      }
+      .poems img{
+          width: 28vw;
+          height: 255px;
+      }
+      #poemline{
+          transform: translate(100px,-78px);
+          width: 50%;
+      }
+      .triangle-left{
+        cursor: pointer;
+        position: absolute;
+        /* top: 45%; */
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 30px solid black;
+        border-bottom: 20px solid transparent;
+        left: 60px;
+        top: 194%;
+    }
+    .triangle-right {
+        cursor: pointer;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 30px solid black;
+        border-bottom: 20px solid transparent;
+       left:250px ;
+        top: 194%;
+        
+    }
+    #poemcircle1{
+        transform: translate(210px,-108px); 
+    }
+    #poemcircle2{
+        transform: translate(160px,-133px); 
+    }
+    #poemcircle3{
+        transform: translate(110px,-157px); 
+    }
+  }
+   /* media for blogs */
+  .blogs h2{
+    font-size: 2.5rem; transform: translateY(-15px); background-color: black; color:white; display: inline-block; padding: 0.8rem; width: 10%; margin: 10px auto;
+
+  }
+
+  @media screen and (max-width:800px){
+      .blogs h2{
+        font-size: 2rem; 
+        transform: translateY(-55px);
+         background-color: black;
+          color:white; 
+          display: inline-block;
+           padding: 0.8rem; 
+           width: 20%;
+         margin: 10px auto;
+      }
+      .blogsCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        justify-items: center;
+        /* padding: 50px; */
+        align-items: center;
+      }
+      .blogsCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       width: 25vw;
+       background:  rgba(46, 158, 176, 0.92);
+       margin: 50px 2vw;
+       position: relative;
+       text-align: left;
+       height: 260px;
+      }
+      .blogsCard img{
+        width: 25vw;
+        height: 160px;
+     
+    }
+    .NameOfMember2 {
+        font-family: 'Inter';
+        color: aliceblue;
+        padding:5px 10px;
+    }
+    .card-text p{
+        font-family: 'Inter';
+        color: white;
+    font-size: .8rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    
+    }
+  }
+
+  /* media for talks */
+  .talksCards{
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    
+
+    /* padding: 50px; */
+    
+}
+
+.talksCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 15vw;
+   border-radius: 10px;
+   background:  rgba(46, 158, 176, 0.92);
+   margin: 50px 2vw;
+   position: relative;
+}
+
+
+.talksCard img{
+    width: 15vw;
+    height: 250px;
+ 
+}
+.talksMember{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+
+.talksNameMember{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:10px 3px;
+}
+#talksCard1{
+    transform: translateX(120px) ;
+    }
+#talksCard3{
+transform: translateX(-120px) ;
+}
+ .talks h2{
+     font-size: 2.5rem; background-color: black; color:white; display: inline-block; padding: 0.8rem; width: 10%; margin: 10px auto;
+ }
+
+ @media screen and (max-width:800px){
+  .talks h2{
+     font-size: 2rem; background-color: black; color:white; display: inline-block; padding: 0.8rem; width: 20%; margin: 10px auto;
+  }
+  .talksCards{
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    
+
+    /* padding: 50px; */
+    
+}
+
+.talksCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 25vw;
+   border-radius: 10px;
+   background:  rgba(46, 158, 176, 0.92);
+   margin: 50px 2vw;
+   position: relative;
+}
+
+
+.talksCard img{
+    width: 25vw;
+    height: 220px;
+ 
+}
+.talksMember{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+
+.talksNameMember{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:10px 3px;
+}
+#talksCard1{
+    transform: translateX(-5px);
+}
+    
+#talksCard3{
+transform: translateX(5px);
+}
+#talksline{
+    width: 65%;
+}
+ }
+
+ /* CLUB MEMBERS */
+ .clubMembers h1{
+     font-size: 2.7rem;
+    text-align: center; transform: translateY(-50px); text-decoration: underline;
+ }
+/* media for club members */
+
+@media screen and (max-width:800px){
+    .clubMembers{
+        align-items: center;
+    }
+    .clubMembers h1{
+        text-align: center; transform: translate(-50px,-150px); text-decoration: underline;
+        
+    }
+   
+    .carousel-cell {
+        width: 30%;
+        height: 250px;
+        /* margin-right: 25px; */
+       background-color: rgba(46, 158, 176, 0.92) ;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+      }
+      .carousel-cell img{
+        width: 100%;
+        height: 250px;
+      }
+      .carousel {
+          transform:  translate(75px,-90px);
+      }
+      #memberheading{
+          transform: translate(70px,-150px);
+      }
+}
+
+/* Contact-us   */
+.contact-us{
+    width: 100%;
+    height: 35vh;
+}
+@media screen and (max-width:800px){
+    .contact-us{
+        transform: translateY(-50px);
+        width: 100%;
+        height: 50vh;
+    }
+    .copyright{
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.slide img{
+    animation: fadeInAnimation ease 4s 1 ;
+}
+.AboutUsCard{
+    animation: fadeInAnimation ease 3s 1 ;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  #explore{
+    font-size: 3rem;  background-color: black; color:white; display: inline-block; padding: 0.8rem; width: 15%; margin: 10px auto; margin-top: -30px;  
+  }
+
+
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+ 
+  #membername{
+      display: inline-block;
+      width: 50%;
+      border-radius:360px;
+      background-color: white;
+      color: black;
+      margin-left: 10px;
+      transform: translateY(-50px);
+  }
+
+  .contact-png{
+      margin: 100px auto;
+      padding: 40px;
+  }
+
+  /* .poems{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.poems .Heading__AboutUs{
+    font-size: 2.5rem;
+}
+.AboutUsCards{
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    
+}
+
+.AboutUsCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 15vw;
+   border-radius: 10px;
+   background:  rgba(46, 158, 176, 0.92);
+   margin: 50px 2vw;
+   position: relative;
+}
+
+
+.AboutUsCard img{
+    width: 15vw;
+    height: 250px;
+ 
+}
+.ContactMember{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+.ContactMember img{
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+   margin: 0 10px; 
+}
+
+.NameOfMember{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:5px 3px;
+}
+
+ */
+

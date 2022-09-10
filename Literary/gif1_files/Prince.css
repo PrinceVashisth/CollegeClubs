@@ -1,0 +1,808 @@
+*{margin: 0;padding: 0;box-sizing: border-box;
+font-family:Arial, Helvetica, ; max-width: 100vw;}
+
+.nav-link{
+    margin: auto 3rem;
+}
+.contact-logo:hover{
+    transition: all 1s ease;
+    transform: scale(1.15);
+}
+
+.home{
+    height: 60bh;
+    width: 100bw;
+}
+
+.contact-logo{
+    position: relative;
+    top: 50px;
+    width: 10%;
+    margin: 5px;
+   
+}
+/* 
+*/
+
+.nav-item{
+    font-family: 'Merriweather', serif; 
+}
+
+/* About US */
+
+#About__Aarya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:30px;
+    font-family: 'Merriweather', serif;
+}
+
+.EventPara p{
+   margin: 10px 0;
+}
+.AboutAaryaHeading{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.AboutAaryaHeading span{
+    color: #000;
+
+}
+
+.AboutContentAarya{
+    display: flex;
+    padding: 30px;
+}
+
+.Text__Content__Aarya {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    font-size: 1.4rem;
+    justify-content: center;
+}
+
+.img__Aarya img {
+    width: 670px;
+    height: 650px;
+    border-radius: 20px;
+} 
+
+/* 
+
+*/
+
+.newsheading{
+    text-align: center;
+    margin-bottom:60px;
+}
+.newsheading span{
+    background: #000;
+    color: #fff;
+    font-size: 2.5rem;
+    padding:6px 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+ 
+ .News__Section{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 50px;
+ }
+ 
+ .News__Lines{
+    display: flex;
+    flex-direction: column;
+ 
+ }
+ .NewsHeadings{
+     list-style-type: none;  
+ }
+ .news{
+     margin: 10px 0;
+ }
+ 
+ .News__EventCards{
+     display: flex;
+     justify-content: space-around;
+     width: 50vw;
+     margin: 50px auto;
+ }
+ 
+ .News__EventCard img{
+     width: 300px;
+     height: 400px;
+ }
+ .News__EventCard:hover{
+     transition: all 1s ease;
+     transform: scale(1.15);
+ }
+ 
+ @media screen and (max-width:1300px){
+     .News__Section{
+         padding: 0 20px;
+     }
+     .News__EventCard,.News__EventCard img{
+         width: 250px;
+         height: 350px;
+     }
+ }
+ 
+ @media screen and (max-width:1100px){
+    
+   .News__Section{
+       flex-direction: column;
+   }
+  .News__MainEvents{
+       margin-top: 50px;
+   }
+    .News__EventCards{
+     justify-content: space-around;
+     width: 100vw;
+ 
+    } 
+ }
+
+ @media screen and (max-width: 830px) {
+     .News__EventCards{
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .News__EventCard{
+         margin: 30px auto;
+     }
+ }
+
+
+
+/* Gallery */
+
+#EventsAndGallery__Aarya{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    /* background-color: #EEEEEE; */
+}
+
+.HeadingEvents{
+    text-align: center;
+    margin-bottom:60px;
+}
+.HeadingEvents span{
+    background: #000;
+    color: #fff;
+    font-size: 2.5rem;
+    padding:6px 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.Content__Events{
+    display: flex;
+}
+
+.LeftSideContent__Event{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+.LeftSideContent__Event img{
+    width: 45vw;
+    height: 545px;
+}
+
+.RightSideContent__Event{
+    width: 50vw;
+}
+
+.EventsLinks{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-bottom: 20px;
+
+}
+
+.EventsLinks span{
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    background: #0C90A5;
+    color: #fff;
+    border-radius: 10px;
+   cursor: pointer;
+}
+
+.EventsLinks span:hover{
+
+box-shadow: 6px 6px 20px #0C90A5;
+}
+
+.RightContentAaryaPAra{
+    margin: 60px 50px;
+    font-size: 1.3rem;
+}
+
+#ExploreAndPoems{
+    background-image: url('./Explore.png'); 
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+     max-width: 100vw;
+     height: 500px;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     align-items: center;
+}
+
+.ExploreUpper{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 5px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius:10px;
+    margin-top: 40px;
+}
+
+/* .ExploreLower{
+
+} */
+
+.ExploreTags{
+    display: flex;
+    margin-bottom: 70px;
+    background-color: #0C90A5;
+    border-radius: 10px;
+    border: 2px solid #0C90A5;
+}
+.ExploreTag{
+    padding: 10px 30px;
+    margin: 0 1px;
+    background-color: #000;
+}
+
+.ExploreTag a{
+    text-decoration: none;
+    color: #fff;
+}
+.ExploreTag:hover,.ExploreTag a:hover{
+     background-color: #0C90A5;
+     transition: all 1s ease;
+     color: #fff;
+}
+
+.ExploreTag:nth-child(1),.ExploreTag:nth-child(4){
+     border-radius: 5px;
+}
+
+/* Poem */
+
+
+/* Blogs */
+
+#Blogs,#Poem,#Theater {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.BlogsHeading,.PoemHeading{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.BlogsHeading span,.PoemHeading span{
+    padding: 9px 30px;
+    color: #fff;
+    background: #000;
+    font-size: 2.3rem;
+    border-radius: 10px;
+}
+
+.BlogsCards,.PoemCards,.TheaterCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    justify-items: center;
+}
+
+.BlogsCard,.PoemCard,.TheaterCard{
+    width: 20vw;
+    background-color: #0C90A5;
+    margin: 30px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.BlogCardImg,.PoemImg,.TheaterCardImg{
+   width: 20vw; 
+   height: 150px;
+   border-radius: 10px;
+}
+
+.BlogCardImg img,.PoemImg img,.TheaterCardImg img{
+    height: 200px;
+    width: 20vw; 
+    border-radius: 10px;
+ }
+
+.CardHeading,.PoemName{
+  margin-top: 5px;
+}
+
+.CardPara{
+  margin: 2px 0;
+}
+
+/* Talks */
+
+.TalksHeading{
+    text-align: center;
+}
+.TalksHeading span{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.TalksCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100vw;
+}
+
+.TalkCard{
+    width: 20vw;
+    margin: 30px 0; 
+    border-radius: 10px;
+    background-color: #0C90A5;
+}
+
+.TalksCardImg{
+    width: 20vw;
+}
+.TalksCardImg img{
+    width: 20vw;
+}
+
+.TalksInnerHeading{
+    text-align: center;
+    margin: 5px 0;
+   color: #fff;
+}
+
+.memberheading{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+.memberheading span{
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+}
+
+.Flickity{
+    display: flex;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.carousel{
+    width: 80vw;
+
+}
+.carousel-cell{
+    width: 18%;
+    height: 360px;
+    background-color:#0C90A5 ;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+.carousel-cell img{
+    width: 100%;
+    height: 280px;
+}
+.carousel-cell h3,h4{
+    margin-bottom: 3px;
+}
+
+
+/* contact us */
+.contact-us{
+    margin-top: 50px;
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    background-color:#0C90A5;
+    color: #fff;
+    padding-left:20px;
+    padding-top: 20px;
+}
+
+.BookShelfImg{
+  position: absolute;
+  right: -4px;
+  top: -170px;
+}
+
+.BookShelfImg img{
+    width: 190px;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .Text__Content__Aarya{
+        margin: 0 20px;
+        font-size: 1rem;
+    }
+
+    .EventPara{
+        margin:0 20px;
+        font-size: 1.2rem;
+    }
+    .RightContentAaryaPAra{
+        margin: 60px 50px;
+    }
+
+    
+#Blogs,#Poem,#Theater{
+    margin-top: 10px;
+}
+
+.BlogsHeading,.PoemHeading,.TheaterHeading{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.BlogsHeading span,.PoemHeading span,.TheaterHeading span{
+    padding: 6px 30px;
+    font-size: 2.3rem;
+    border-radius:10px;
+}
+
+.BlogsCards,.PoemCards,.TheaterCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    justify-items: center;
+}
+
+.BlogsCard,.PoemCard,.TheaterCard{
+    width: 20vw;
+    background-color: #0C90A5;
+    margin: 30px 0;
+    text-align: center;
+    color: #fff;
+
+}
+
+.BlogCardImg,.PoemImg,.TheaterCardImg{
+   width: 20vw; 
+}
+
+.BlogCardImg img,.PoemImg img,.TheaterCardImg img{
+    width: 20vw; 
+ }
+  
+ #Talks{
+    margin-top: 30px;
+}
+
+.TalksHeading{
+    text-align: center;
+}
+.TalksHeading span{
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.TalkCard{
+    width: 25vw;
+    margin: 30px 0; 
+    background-color: #0C90A5;
+}
+
+.TalksCardImg{
+    width: 25vw;
+}
+.TalksCardImg img{
+    width: 25vw;
+}
+
+}
+
+@media screen and (max-width:1000px){
+    .Text__Content__Aarya{
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+    .EventPara{
+        margin:0 10px;
+        font-size: 0.9rem;
+    }
+    .RightContentAaryaPAra{
+        margin: 30px 50px;
+    }
+
+.BlogsCards,.PoemCards,.TheaterCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    justify-items: center;
+}
+
+.BlogsCard,.PoemCard.TheaterCard{
+    width: 40vw;
+    background-color: #0C90A5;
+    margin: 30px 0;
+    text-align: center;
+    color: #fff;
+
+}
+
+.BlogCardImg,.PoemImg,.TheaterCardImg{
+   width: 40vw; 
+}
+
+.BlogCardImg img,.PoemImg img,.TheaterCardImg img{
+    width: 40vw; 
+ }
+  
+}
+
+@media screen and (max-width:880px){
+    .Text__aarya{
+        margin: 0;
+        margin-left:60px;
+    }
+    .Section_Link{
+        margin: 0 5px;
+    }
+    .img__Aarya img{
+        width: 300px;
+        height: 400px;
+        border-radius:20px;
+    }
+
+    .Text__Content__Aarya{
+        margin:0 10px;
+        font-size: 0.8rem;
+    }
+   .EventPara{
+        margin:0 10px;
+        font-size: 0.9rem;
+   }
+
+   
+#EventsAndGallery__Aarya{
+    margin-top: 60px;
+}
+
+.HeadingEvents{
+    text-align: center;
+    margin-bottom:60px;
+    margin-top: 20px;
+}
+.HeadingEvents span{
+    font-size: 2rem;
+    padding:3px 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.Content__Events{
+    display: flex;
+}
+
+.LeftSideContent__Event img {
+    width: 50vw;
+    height: 400px;
+}
+
+.EventsLinks{
+   max-width: 50vw;
+   justify-content: space-between;
+}
+
+.EventsLinks span{
+    padding: 10px 5px;
+    font-size: 1.1rem;
+    margin: 0 5px;
+}
+
+.EventsLinks span:hover{
+
+box-shadow: 6px 6px 20px #0C90A5;
+}
+
+.RightContentAaryaPAra{
+    margin: 60px 50px;
+    font-size: 1.3rem;
+}
+
+}
+
+@media screen and (max-width:730px){
+    #EventsAndGallery__Aarya{
+    width: 100vw;
+    justify-content: center;
+    }
+    .AboutContentAarya,.Content__Events{
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    #About__Aarya{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:30px;
+        font-family: sans-serif, monospace; 
+    }
+    
+    
+    .EventPara p{
+       margin: 20px 0;
+    }
+    .AboutAaryaHeading{
+        font-size: 3rem;
+    }
+    .AboutAaryaHeading span{
+        color: #000;
+    
+    }
+    
+    .AboutContentAarya{
+        padding: 0px;
+    }
+    
+    .Text__Content__Aarya{
+        margin:0 20px;
+        font-size: 1.1rem;
+    }
+
+    .img__Aarya{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    .img__Aarya img {
+        width: 90vw;
+        height: 400px;
+    }
+    .LeftSideContent__Event ,.RightSideContent__Event {
+        width: 100%;
+    }
+    .LeftSideContent__Event img {
+        width: 100vw;
+        height: 350px;
+    }
+    
+    .HeadingEvents {
+       text-align: center;
+       margin: 30px;
+   }
+    .EventsLinks {
+        max-width: 100vw;
+        width: 100vw;
+        justify-content: center;
+    }
+     .Event__Link{
+         margin: 0 30px;
+     }
+     .EventsLinks span{
+         padding: 10px 5px;
+         font-size: 1.1rem;
+         margin: 0 5px;
+     }
+    
+     .RightContentAaryaPAra {
+        margin: 35px 50px;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+   
+.RightSideContent__Event{
+    width: 100vw;
+}
+
+.EventsLinks{
+ margin: 20px auto;
+}
+
+.Event__Link{
+    width: 30vw;
+}
+
+.EventsLinks span{
+    padding: 0px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.BlogsCards,.PoemCards,.TheaterCards{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    justify-items: center;
+}
+
+.BlogsCard,.PoemCard,.TheaterCard{
+    width: 80vw;
+    background-color: #0C90A5;
+    margin: 30px 0;
+    text-align: center;
+    color: #fff;
+
+}
+
+.BlogCardImg,.PoemImg,.TheaterCardImg{
+   width: 80vw; 
+}
+
+.BlogCardImg img,.PoemImg img,.TheaterCardImg img{
+    width: 80vw; 
+ }
+
+ .TalkCard{
+    width: 30vw;
+}
+.TalksCardImg{
+    width: 30vw;
+}
+.TalksCardImg img{
+    width: 30vw;
+}
+   
+.toggle__Menu{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+ }
+ #bar{
+     height: 4px;
+     width: 43px;
+     background: #000;
+     margin: 3px 0;
+ }
+  
+ .Links__aarya{
+     flex-direction: column;
+     width: 100%;
+     justify-content: center;
+     position: absolute;
+     background: #000;
+ }
+
+}
+
+#Talks,#Blogs,#Theater{
+    display: none;
+    margin-top: 30px;
+}
+
+.copyright{
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}

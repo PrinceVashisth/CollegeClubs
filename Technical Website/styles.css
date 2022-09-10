@@ -1,0 +1,581 @@
+body{
+    background-image: url('img/unsplash_TspYRqQrErc.png');
+    font-family: 'Montserrat';
+}
+
+/*--------------------------------class selectors----------------------------------------------------------------*/
+
+
+.club-logo{
+    width: 100%;
+    text-align: center;
+}
+
+.club-logo-img{
+    width: 7%;
+    margin: 20px auto;
+}
+
+
+.nav-link{
+    margin: auto 5rem;
+}
+
+.home{
+    align-items: center;
+    display: flex;
+    height: 75vh;
+}
+
+
+.contact{
+    margin-top: 200px;
+    border-radius: 10px;
+    padding: 1rem;
+    display: inline-block;
+    background-color: #1C1433;
+}
+
+.contact-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-icon{
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-icon:hover{
+    transition: all 1s ease;
+    transform: scale(1.15);
+}
+
+.home-name{
+    margin-left: auto;
+}
+
+.earth-gif{
+    padding: 1rem;
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.earth-gif-img{
+    width: 30vw;
+}
+
+
+.about-page{
+    background-color: #151027;
+    margin:0px;
+    height: 100%;
+    padding: 2rem;
+}
+
+.about-p{
+    color: white;
+    line-height: 2;
+    text-align: justify;
+    width: 50%;
+    margin: auto 100px;
+}
+
+/*what we do*/
+
+.about-page h2{
+    margin:15px;
+}
+
+.WhatWeDoHeading{
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 20px auto;
+}
+
+.WhatWeDo__Cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    max-width: 100vw;
+    margin-bottom:50px;
+}
+
+.WhatWeDoCard{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    width: 20vw;
+    margin: 30px auto;
+}
+
+.WhatWeDoTitle{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+/* Carosol */
+.Events{
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel{
+    width: 50vw;
+}
+
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Carosel item */
+.carousel-item{
+    width: 30rem;
+}
+
+/* Gif Section */
+.about-page{
+    position: relative;
+}
+
+
+.RunningGif{
+    position: absolute;
+    background-image: url('./img/Static\ Gear.png');
+    width: 40vw;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom:0px;
+    margin-right: 0px;
+}
+
+.RunningGif:hover{
+    background-image: url('./img/Dynamic\ Gear.gif');
+}
+
+.ContectText{
+    width: 30%;
+   }
+
+/* For Gear icon */
+@media screen and (max-width:1300px){
+    .earth-gif-img{
+        width: 40vw;
+    } 
+    .earth-gif {
+        padding: 0rem;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+    .contact{
+        display: flex;
+        position: absolute;
+        bottom: 0; 
+        padding: 20px 30px;
+        background-color: transparent; 
+        margin-bottom: 50px;     
+    }
+    
+    .contact-list{
+        background-color: #1C1433;
+        border-radius: 20px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .contact-icon{
+        margin: 0;
+        padding: 20px;
+    }
+    
+  
+
+}
+
+@media screen and (max-width:1250px) {
+    .RunningGif{
+        position: relative;
+        max-width: 100vw;
+        min-width: 95vw;
+        padding: 0;margin: 0;
+    }
+
+    .about-p{
+            width: 80vw;
+    }
+}
+/*Team Leads*/
+
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUs .Heading__AboutUs{
+    font-size: 2.5rem;
+    color:white;
+}
+.AboutUsCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.AboutUsCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 20vw;
+   background: #000;
+   margin: 50px 2vw;
+   position: relative;
+}
+
+
+.AboutUsCard img{
+    width: 20vw;
+    height: 200px;
+}
+.ContactMember{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute; 
+    opacity: 0;
+}
+
+.ContactMember img{
+   width: 40px;
+   height: 40px;
+   border-radius:50%;
+   margin: 0 10px; 
+}
+
+.NameOfMember{
+    color: aliceblue;
+    text-align: center;
+    padding:15px 5px;
+}
+
+.AboutUsCard:hover .ContactMember{
+    top:calc(200px - 40px);
+   transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+@media screen and (max-width:1200px){
+    .home-slgn{
+      width: 50vw;
+    }
+    .home-slgn img{
+     width: 40vw;
+    }
+    .earth-gif{
+        width: 40vw;
+    }
+
+} 
+
+@media screen and (max-width:1000px){
+    .home{
+        max-width: 100vw; 
+    }
+
+    .AboutUsCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .AboutUsCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       width: 30vw;
+       background: #000;
+       margin: 50px 1vw;
+       position: relative;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 30vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+
+/*contact us*/
+.contact-us{
+    display: flex;
+    background-color: #161028F7;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 25vh;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-us-name{
+    color:white;
+    margin:30px;
+    padding:15px;
+    display:inline-block;
+}
+
+.contact-us-logo :hover{
+    transition: all 1s ease;
+    transform: scale(1.15);
+}
+
+.contact-us-logo a img{
+    margin: auto 20px;
+}
+
+.copyright{
+    /* padding: 1rem; */
+    text-align: center;
+    width: 100;
+    background-color: #0B0E1D;
+    color: white;
+    font-weight: bold;
+}
+
+.gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sections{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -----------------------id selectors---------- */
+
+#members{
+    margin-top: 90px;
+}
+
+
+@media screen and (max-width:900px){
+
+    .home-slgn{
+        width: 50vw;
+      }
+      .home-slgn img{
+       width: 50vw;
+      }
+      .earth-gif{
+          width: 45vw;
+      }
+   
+
+    .contact {
+        padding: 20px 30px;
+        margin-bottom: 84px;
+    }
+    
+    .contact-icon {
+        margin: 0;
+        padding: 7px 15px;
+    }
+
+    
+    .about-page {
+        padding: 1rem;
+    }
+    .about-page h2{
+        margin: 2px;
+    }
+    .about-p {
+        margin: auto 50px;
+    }
+    .RunningGif{
+        height: 300px;
+    }
+
+    .contact-us-name {
+        margin: 10px;
+        padding: 5px;
+    }
+    .contact-us-logo a img {
+        margin: auto 7px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .contact-us {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .contact-us-name {
+        margin: 0px;
+        padding: 0px;
+    }
+    .contact-us-logo a img {
+        margin: 25px 35px;
+    }
+
+    .AboutUsCards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .AboutUsCard{
+       width: 45vw;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 45vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+
+@media screen and (max-width:520px){
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0; 
+    }
+     .contact{
+       position: relative;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       padding: 0;
+       margin: 0;
+     }
+    .home-name {
+        margin-left:0;
+    }
+    .home-name img{
+        width:300px;
+    }
+    .home-slgn {
+        width: 50vw;
+    }
+    .home-slgn img{
+        width: 55vw;
+    }
+    .earth-gif{
+        width: 100%;
+    }
+    .earth-gif img{
+        width: 100%;
+    }
+
+    .contact-us-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   .ContectText{
+    width: 90%;
+   }
+}
+
+@media screen and (max-width:450px){
+    .AboutUsCards{
+        grid-template-columns: 1fr;
+    }
+    
+    .AboutUsCard{
+       width: 80vw;
+    }
+    
+    
+    .AboutUsCard img{
+        width: 80vw;
+        height: 200px;
+    } 
+    .ContactMember{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        position: absolute; 
+        opacity: 0;
+    }
+    
+    .ContactMember img{
+       width: 40px;
+       height: 40px;
+       border-radius:50%;
+       margin: 0 10px; 
+    }
+}
+
+
+
+/* Gallery */
+
+.gallery{
+    text-align: center;
+   text-decoration: underline;
+}
+
+.gallery h1{
+    font-size: 2.5rem;
+}

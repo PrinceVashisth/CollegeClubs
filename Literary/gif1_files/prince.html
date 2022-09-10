@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon (5).ico">
+    <link rel="stylesheet" href="./Prince.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+   
+<style>
+
+    *{margin: 0;padding: 0;}
+    .navbar{
+        display: flex;
+        align-items: center;
+        max-width: 100vw;
+        position: sticky;
+        top:0;
+        z-index: 5;
+        background-color: #0C90A5;
+    }
+    .Links{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+.link__right{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.Link{
+    padding: 10px 4vw;
+    font-size: 1.2rem;
+}
+.Link a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+.Link a:hover{
+    color: rgb(215, 190, 75);
+    transition: all 1s ease;
+} 
+
+ @media screen and (max-width:1200px){
+    .navbar{
+        background-color: transparent;
+    }
+    .Links{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: -800px;
+     
+        transition: all 1s ease;
+    }
+    .Links.active{
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top:  0;
+        background-color: #25262df2;
+        transition: all 1s ease;
+    }
+    .Link {
+        margin: 20px 30px;
+        font-size: 1.5rem;
+    }
+
+    .Link:hover{
+        border:3px solid white;
+        transition: all 1s ease-in-out ;
+    }
+    .toggle__icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 39px;
+        position: fixed;
+        z-index: 10;
+    }
+    #bar{
+        height: 3px;
+        width: 25px;
+        background-color: #0C90A5;
+        margin: 3px;
+        margin-left: auto;
+        transition: all 0.3s ease;
+
+    }
+
+    .toggle__icon.is-active #bar:nth-child(2){
+        opacity: 0;
+    }
+    .toggle__icon.is-active #bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+    }
+    .toggle__icon.is-active #bar:nth-child(3){
+     transform: translateY(-10px) rotate(-45deg);
+    }
+
+ }
+
+</style>
+
+    <title>Aarya-Literary Club</title>
+
+</head>
+<body>
+    <div class="logo-name" style="background-color:black;">
+        <table style="width: 100%; margin:auto -30px;">
+            <tr>
+                <td style="text-align: center;" >
+                    <a href="#"><img src="../IMG-20220422-WA0002.jpg" alt="club-logo" width="165"></a>
+                </td>
+                <td style="text-align: left;">
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-decoration: none; font-weight: 800; margin-bottom: 0;color: white;">AARYA</h1>
+                    <h3 style="font-weight: 400; margin-top: 0;color: white;">THE LITERARY CLUB ,<a href="https://www.ecajmer.ac.in/" target="_blanl" style="color:white;text-decoration:none;"> ECA</a></h3>
+                </td>
+                <td style="text-align: right; margin:auto 20px;">
+                    <a href="https://www.instagram.com/aaryalitclub/" target="_blank"><img class="contact-logo" id="insta" src="../img/Vectori.png" alt="instgram-logo"></a>
+                    <a href="https://telegram.org/" target="_blank"><img class="contact-logo" id="telegram" src="../img/Vectort.png" alt="telegram-logo"></a>
+                    <a href="mailto:durganshumishra2001@gmail.com" target="_blank"><img class="contact-logo" id="mailme" src="../img/Vectorm.png" alt="mail-logo"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--NavBar-->
+
+    <div class="navbar">
+        <div class="toggle__icon">
+            <div id="bar"></div>
+            <div id="bar"></div>
+            <div id="bar"></div>
+        </div>
+        <div class="link__right">
+            <ul class="Links">
+                <li class="Link"><a href="#About__Aarya">Home</a></li>
+                <li class="Link"><a href="#news">News</a></li>
+                <li class="Link"><a href="#EventsAndGallery__Aarya">Events</a></li>
+                <li class="Link"><a href="#ExploreAndPoems">Explore</a></li>
+                <li class="Link"><a href="#OurClubMembers">Members</a></li>
+                <li class="Link"><a href="../../CIC/undcns.html">Registers</a></li>
+                <li class="Link"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="About__Aarya" data-aos="fade-in" data-aos-duration="4000">
+        <div class="AboutContentAarya">
+            <div class="Text__Content__Aarya">
+                <div class="AboutAaryaHeading"><span> About Us </span></div>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam veniam unde voluptatum assumenda ex amet impedit pariatur aliquam tenetur quasi facere, facilis enim! Veniam at, repellendus atque expedita totam consequuntur, deleniti distinctio facere dolor in voluptates! Ipsam animi hic corporis, deleniti esse ipsum. Tempora impedit autem explicabo temporibus recusandae!</p>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam veniam unde voluptatum assumenda ex amet impedit pariatur aliquam tenetur quasi facere, facilis enim! Veniam at, repellendus atque expedita totam consequuntur, deleniti distinctio facere dolor in voluptates! Ipsam animi hic corporis, deleniti esse ipsum. Tempora impedit autem explicabo temporibus recusandae!</p>
+            </div>
+            <div class="img__Aarya">
+                <img class="about-pic" src="../LJIZlzHgQ7WPSh5KVTCB_Typewriter.png">   
+            </div>
+
+        </div>
+    </div>
+
+    <div id="news">
+        <h1 class="newsheading"><span >Latest News</span></h1>
+        <div class="News__MainEvents">
+            <div class="News__EventCards">
+            
+                <div class="News__EventCard">
+                   <a href="#"><img src="./b40e43520e6df9c37b88e3db13c1e295 1.png" alt="" srcset=""></a>
+                </div><!-- News__EventCard -->
+                 
+                <div class="News__EventCard">
+                   <a href="#"><img src="./aop-18-19-poster-creative-writing 1.png" alt="" srcset=""></a>
+                </div><!-- News__EventCard -->
+
+                <div class="News__EventCard">
+                    <a href="#"><img src="./download (1) 1.png" alt="" srcset=""></a>
+                 </div><!-- News__EventCard -->
+            
+            </div><!-- News__EventCards -->   
+        </div><!-- News__MainEvents -->
+    </div>
+    
+    <div id="EventsAndGallery__Aarya" data-aos="fade-in" data-aos-duration="4000">
+        <div class="Content__Events">
+            <div class="LeftSideContent__Event">
+                <div class="LeftSideAaryaImg"><img src="./Event1Gif.gif" alt="" srcset=""></div>
+                <div class="LeftSideAaryaImg"><img src="../650745_poem-wallpapers-and_839x629_h.jpg" alt="" srcset=""></div>
+                <div class="LeftSideAaryaImg"><img src="../Rectangle 198.png" alt="" srcset=""></div>
+            </div>
+            <div class="RightSideContent__Event">
+                <div class="HeadingEvents"><span> Events And Gallery </span></div>
+                <div class="EventsLinks">
+                    <div class="Event__Link"><span onclick="controller(0)">Trivia Quiz</span></div>
+                    <div class="Event__Link"><span onclick="controller(1)">Poet Way</span></div>
+                    <div class="Event__Link"><span onclick="controller(2)">Mystery</span></div>
+                </div>
+                <div class="RightContentAaryaPAra">
+                    <div class="EventPara">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis? Numquam est cupiditate delectus?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, quisquam! Numquam est cupiditate delectus?</p>
+                    </div>
+                    <div class="EventPara">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum eos vel non quisquam rem iusto sunt quaerat earum praesentium laborum, ex molestiae qui ratione cupiditate, deserunt sit minus eum nihil omnis? Optio doloribus consequatur distinctio! Quis eum fugiat rem nisi et autem voluptate cumque incidunt corporis. Omnis, molestiae! Explicabo maxime velit natus saepe accusantium deserunt. Numquam est cupiditate delectus?</p>
+                    </div>
+                    <div class="EventPara">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum eos vel non quisquam rem iusto sunt quaerat earum praesentium laborum, ex molestiae qui ratione cupiditate, deserunt sit minus eum nihil omnis? Optio doloribus consequatur distinctio! Quis eum fugiat rem nisi et autem voluptate cumque incidunt corporis. Omnis, molestiae! Explicabo maxime velit natus saepe accusantium deserunt. Numquam est cupiditate delectus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div id="ExploreAndPoems" data-aos="fade-in" data-aos-duration="4000">
+       
+        <div class="ExploreUpper"> EXPLORE </div>
+        <div class="ExploreLower">
+            <div class="ExploreTags">
+                <div class="ExploreTag"><a href="#Poem">POEM</a></div>
+                <div class="ExploreTag"><a href="#Blogs">BLOGS</a></div>
+                <div class="ExploreTag"><a href="#Talks">TALKS</a></div>
+                <div class="ExploreTag"><a href="#Theater">THEATER</a></div>
+            </div>
+        </div>     
+    </div>
+    
+    <div id="Poem">
+        <div class="PoemHeading"><span>Poem</span></div>
+        <div class="PoemCards">
+            <div class="PoemCard">
+                <div class="PoemImg">
+                    <img src="../Rectangle 196.png" alt="" srcset="">
+                </div>
+                <div class="PoemName"><span>FREE WILL PILL</span></div>
+            </div>
+            <div class="PoemCard">
+                <div class="PoemImg">
+                    <img src="../Rectangle 197.png" alt="" srcset="">
+                </div>
+                <div class="PoemName"><span>ONE ART</span></div>
+            </div>
+            <div class="PoemCard">
+                <div class="PoemImg">
+                    <img src="../Rectangle 198.png" alt="" srcset="">
+                </div>
+                <div class="PoemName"><span>HE SAID WHY ?</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="Blogs" data-aos="fade-in" data-aos-duration="4000">
+      <div class="BlogsHeading"><span>Blogs</span></div>
+      <div class="BlogsCards">
+          <div class="BlogsCard">
+              <div class="BlogCardImg">
+                <img src="../william-shakespeare.jpg" alt="" srcset="">
+              </div>
+              <div class="CardContent">
+                  <div class="CardHeading"><span>william-shakespeare Way</span></div>
+                  <div class="CardPara"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p></div>
+          <div class="Author"><span>Author</span></div>
+                  
+                </div>
+          </div>
+          <div class="BlogsCard">
+              <div class="BlogCardImg">
+                <img src="../Rectangle 200.png" alt="" srcset="">
+              </div>
+              <div class="CardContent">
+                  <div class="CardHeading"><span>Name</span></div>
+                  <div class="CardPara"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p></div>
+                  <div class="Author"><span>Author</span></div>
+                </div>
+          </div>
+          <div class="BlogsCard">
+              <div class="BlogCardImg">
+                <img src="../Rectangle 202.png" alt="" srcset="">
+              </div>
+              <div class="CardContent">
+                  <div class="CardHeading"><span>Name</span></div>
+                  <div class="CardPara"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p></div>
+                  <div class="Author"><span>Author</span></div>
+                </div>
+          </div>
+          <div class="BlogsCard">
+              <div class="BlogCardImg">
+                <img src="../Rectangle 225.png" alt="" srcset="">
+              </div>
+              <div class="CardContent">
+                  <div class="CardHeading"><span>Name</span></div>
+                  <div class="CardPara"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloremque, </p></div>
+                  <div class="Author"><span>Author</span></div>
+                </div>
+          </div>
+          <div class="BlogsCard">
+              <div class="BlogCardImg">
+                <img src="../IMG-20220422-WA0002.jpg" alt="" srcset="">
+              </div>
+              <div class="CardContent">
+                  <div class="CardHeading"><span>Name</span></div>
+                  <div class="CardPara"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p></div>
+                  <div class="Author"><span>Author</span></div>
+                </div>
+          </div>
+          <div class="BlogsCard">
+              <div class="BlogCardImg">
+                <img src="../Rectangle 225.png" alt="" srcset="">
+              </div>
+              <div class="CardContent">
+                  <div class="CardHeading"><span>Name</span></div>
+                  <div class="CardPara"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p></div>
+                  <div class="Author"><span>Author</span></div>
+                </div>
+          </div>
+      </div>
+    </div>
+    <div id="Talks" data-aos="fade-in" data-aos-duration="4000">
+        <div class="TalksHeading"><span>Talks</span></div>
+     <div class="TalksCards">
+         <div class="TalkCard">
+             <div class="TalksCardImg"><img src="../aop-18-19-poster-creative-writing.png" alt="" srcset=""></div>
+             <div class="TalksInnerHeading"><span>Heading</span></div>
+            </div>
+            <div class="TalkCard">
+                <div class="TalksCardImg"><img src="../aop-18-19-poster-creative-writing.png" alt="" srcset=""></div>
+                <div class="TalksInnerHeading"><span>Heading</span></div>
+            </div>
+            <div class="TalkCard">
+                <div class="TalksCardImg"><img src="../aop-18-19-poster-creative-writing.png" alt="" srcset=""></div>
+                <div class="TalksInnerHeading"><span>Heading</span></div>
+            </div>
+     </div>
+    </div>
+
+    <div id="Theater">
+        <div class="TheaterHeading"> <span>Theater</span> </div> 
+            <div class="TheaterCards">
+             <div class="TheaterCard">
+                 <div class="TheaterCardImg">
+               <img src="../b40e43520e6df9c37b88e3db13c1e295.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+        <div class="TheaterCard">
+            <div class="TheaterCardImg">
+                     <img src="../aop-18-19-poster-creative-writing.png" alt="" srcset="">
+                 </div>
+
+             </div>
+             <div class="TheaterCard">
+                 <div class="TheaterCardImg">
+                     <img src="../aop-18-19-poster-creative-writing.png" alt="" srcset="">
+                 </div>
+             </div>
+         </div>    
+    </div>
+
+    <div id="OurClubMembers" data-aos="fade-in" data-aos-duration="4000">
+        <div class="memberheading">
+             <span>OUR CLUB MEMBERS</span> 
+        </div>
+            
+            <!-- Flickity HTML init -->
+            <div class="Flickity">
+            <div class="carousel" data-flickity='{ "autoPlay": 1500 ,"wrapAround": true }'>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="" >
+            <h3 id="membername" style="text-align: center;
+            ">Alex</h3>
+            <h4 style="text-align: center;">Head Coordinator</h4></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="" >
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="" >
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="" >
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="" >
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="">
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="">
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="" >
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+              <div class="carousel-cell"><img src="../Rectangle 197.png" alt="" >
+               <h3 style="text-align: center;
+               ">Alex</h3></div>
+            
+            </div>
+            </div>
+        </div>
+         <div class="contact-us" id="contact-us" data-aos="fade-in" data-aos-duration="1000">
+            <h3>Contact us</h3>
+            <!-- Book shelf image -->
+            <div class="BookShelfImg">
+               <img src="./BookShelf.png"  alt="" class="contact-png" >
+               </div>
+               <p>
+                  Enigineering College, Ajmer- 324002
+                  <br>
+                  Phone: 8005516659
+               </p>
+            
+    </div>
+
+    <!-- Contact -->
+    <div class="copyright" id="copyright" style="text-align: center;">
+        <p>Copyright © 2022 AAVISHKAAR,  ECA | DEVELOPED BY <a href="./TEAM AARYA PDF.pdf" target="_blank"><em>TEAM CREATORS</em></a></p>
+    </div>  
+</body>
+
+<script src="./index.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- Bootstrap JavaScript Libraries -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+   <script>
+       const Poem = document.querySelector('#Poem');
+       const Blogs = document.querySelector('#Blogs');
+       const Talks = document.querySelector('#Talks');
+       const Theater = document.querySelector('#Theater'); 
+       const ExploreAndPoems = document.querySelector('#ExploreAndPoems');  
+       ExploreAndPoems.addEventListener('click',(e)=>{
+           console.log(e.target.innerHTML);
+        if (e.target.innerHTML == 'POEM'){
+            Poem.style.display='block';
+            Blogs.style.display='none';
+            Talks.style.display='none';
+            Theater.style.display='none';
+        }else if(e.target.innerHTML == 'BLOGS'){
+            Blogs.style.display='block';
+            Poem.style.display='none';
+            Talks.style.display='none';
+            Theater.style.display='none';
+        }else if(e.target.innerHTML == 'TALKS'){
+            Talks.style.display='block';
+            Poem.style.display='none';
+            Blogs.style.display='none';
+            Theater.style.display='none';
+        }else if(e.target.innerHTML == 'THEATER'){
+            Theater.style.display='block';
+            Poem.style.display='none';
+            Blogs.style.display='none';
+            Talks.style.display='none';
+        }
+       })
+
+   </script>
+
+   <script>
+    const links = document.querySelector('.Links');
+    const toggle = document.querySelector('.toggle__icon');
+   
+  const toggleing = ()=>{
+     links.classList.toggle('active');
+     toggle.classList.toggle('is-active');
+  }
+toggle.addEventListener('click',toggleing);
+</script>
+<script>
+    let flag=0;
+    function controller(x){
+        flag=x;
+        slideshow(flag);
+    }
+    slideshow(flag);
+
+    function slideshow(num){
+   let slide1=document.getElementsByClassName('LeftSideAaryaImg');
+   let slide2=document.getElementsByClassName('EventPara');
+
+  for (let x of slide1){
+    x.style.display="none";
+   }
+   for(let y of slide2){
+       y.style.display="none";
+   }
+   slide1[num].style.display="block";
+   slide2[num].style.display="block";
+    }
+</script>
+
+</html>
